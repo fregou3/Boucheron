@@ -209,18 +209,23 @@
   overflow: hidden;
   background-color: #f9fbfa;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .map-image {
   width: 100%;
+  max-width: 800px;
   height: auto;
   display: block;
   margin: 0 auto;
   transition: transform 0.5s ease;
+  object-fit: contain;
 }
 
 .map-wrapper:hover .map-image {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .map-legend {
