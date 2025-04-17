@@ -150,164 +150,134 @@
 
 /* Styles pour la carte */
 .map-section {
-  margin: 50px 0;
+  margin: 60px 0;
 }
 
 .map-section h3 {
   text-align: center;
   margin-bottom: 30px;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: var(--boucheron-dark-green);
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 500;
+  letter-spacing: 1px;
 }
 
 .map-container {
-  border-radius: 12px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
   position: relative;
-  background-color: #f5f8f7;
-  padding: 30px;
+  background-color: #f9f9f7;
+  padding: 40px;
   margin: 30px 0;
   border: 1px solid #e0e6e4;
 }
 
-.map-title {
+.map-header {
   text-align: center;
-  font-size: 1.4rem;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0, 77, 64, 0.1);
+  padding-bottom: 20px;
+}
+
+.map-title {
+  font-size: 1.6rem;
   font-weight: 600;
   color: var(--boucheron-dark-green);
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  letter-spacing: 1.5px;
   font-family: 'Cormorant Garamond', serif;
+  margin-bottom: 10px;
+}
+
+.map-subtitle {
+  font-size: 1rem;
+  color: #666;
+  font-style: italic;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.map-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .map-wrapper {
   position: relative;
-  margin-bottom: 30px;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
   background-color: #f9fbfa;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .map-image {
   width: 100%;
   height: auto;
-  max-height: 500px;
-  object-fit: contain;
   display: block;
   margin: 0 auto;
+  transition: transform 0.5s ease;
 }
 
-.map-location {
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.location-dot {
-  width: 14px;
-  height: 14px;
-  border-radius: 50%;
-  background-color: var(--boucheron-gold);
-  border: 2px solid white;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  margin-bottom: 5px;
-  transition: transform 0.3s ease;
-}
-
-.map-location:hover .location-dot {
-  transform: scale(1.3);
-}
-
-.location-label {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 6px 10px;
-  border-radius: 4px;
-  font-size: 0.85rem;
-  text-align: center;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  border: 1px solid #eaeaea;
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: all 0.3s ease;
-  pointer-events: none;
-  white-space: nowrap;
-  font-weight: 500;
-  color: var(--boucheron-dark-green);
-}
-
-.location-detail {
-  font-size: 0.75rem;
-  font-style: italic;
-  color: #666;
-  display: block;
-  margin-top: 2px;
-}
-
-.map-location:hover .location-label {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Positions spécifiques pour chaque emplacement */
-.paris {
-  top: 32%;
-  left: 24%;
-}
-
-.geneve {
-  top: 40%;
-  left: 35%;
-}
-
-.milan {
-  top: 48%;
-  left: 42%;
+.map-wrapper:hover .map-image {
+  transform: scale(1.02);
 }
 
 .map-legend {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   background-color: rgba(255, 255, 255, 0.95);
-  padding: 20px 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
   margin: 0 auto;
-  max-width: 400px;
-  font-size: 0.95rem;
-  border: 1px solid #eaeaea;
+  max-width: 500px;
+  font-size: 1rem;
+  border: 1px solid #e0e6e4;
 }
 
 .legend-title {
   text-align: center;
   font-weight: 600;
   color: var(--boucheron-dark-green);
-  margin-bottom: 5px;
-  font-size: 1.1rem;
-  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
   font-family: 'Cormorant Garamond', serif;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.legend-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 1px;
+  background-color: var(--boucheron-gold);
 }
 
 .legend-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 5px 0;
+  gap: 15px;
+  padding: 8px 0;
 }
 
 .legend-dot {
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
   border-radius: 50%;
   display: inline-block;
   border: 1px solid rgba(0,0,0,0.1);
 }
 
 .legend-line {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 2px;
   display: inline-block;
 }
 
@@ -317,8 +287,8 @@
 }
 
 .supply-chain {
-  background-color: var(--boucheron-dark-green);
-  height: 3px;
+  background-color: var(--boucheron-gold);
+  height: 2px;
 }
 
 .headquarters {
@@ -326,51 +296,86 @@
   box-shadow: 0 0 5px rgba(0, 77, 64, 0.5);
 }
 
+.legend-countries {
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(0, 77, 64, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.legend-country {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+}
+
+.country-indicator {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 1px solid #e0e6e4;
+  background-color: #e8f5e9;
+}
+
 @media (max-width: 992px) {
   .map-container {
+    padding: 30px;
+  }
+  
+  .map-title {
+    font-size: 1.4rem;
+  }
+  
+  .map-subtitle {
+    font-size: 0.9rem;
+  }
+  
+  .legend-countries {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .map-section {
+    margin: 40px 0;
+  }
+  
+  .map-container {
     padding: 20px;
+  }
+  
+  .map-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
   }
   
   .map-title {
     font-size: 1.2rem;
   }
   
-  .location-label {
-    font-size: 0.8rem;
+  .map-subtitle {
+    font-size: 0.85rem;
   }
   
-  .location-detail {
-    font-size: 0.7rem;
-  }
-}
-
-@media (max-width: 768px) {
   .map-wrapper {
     margin-bottom: 20px;
   }
   
   .map-legend {
-    position: relative;
-    top: auto;
-    right: auto;
-    margin-top: 15px;
+    padding: 20px;
     width: 100%;
     max-width: none;
   }
   
-  .paris {
-    top: 30%;
-    left: 20%;
+  .legend-title {
+    font-size: 1.1rem;
   }
   
-  .geneve {
-    top: 38%;
-    left: 32%;
-  }
-  
-  .milan {
-    top: 45%;
-    left: 38%;
+  .legend-countries {
+    grid-template-columns: 1fr;
   }
 }
 
