@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .stroke { stroke: #1D3C34; stroke-width: 2; fill: none; }
+    .fill { fill: #C9A980; }
+    .fill-light { fill: #E5D7B5; }
+    .fill-dark { fill: #8A7654; }
+  </style>
+  <g>
+    <!-- Établi de tailleur -->
+    <rect class="fill-dark" x="20" y="60" width="60" height="10" rx="2" />
+    <rect class="stroke" x="20" y="60" width="60" height="10" rx="2" />
+    <rect class="fill-dark" x="25" y="70" width="5" height="20" />
+    <rect class="fill-dark" x="70" y="70" width="5" height="20" />
+    
+    <!-- Diamant en cours de taille -->
+    <polygon class="fill-light" points="50,30 40,45 60,45" />
+    <polygon class="stroke" points="50,30 40,45 60,45" />
+    
+    <!-- Outils de taille -->
+    <line class="stroke" x1="30" y1="50" x2="40" y2="40" />
+    <circle class="fill" cx="30" cy="50" r="3" />
+    <rect class="fill-dark" x="27" y="50" width="6" height="15" />
+    
+    <line class="stroke" x1="70" y1="50" x2="60" y2="40" />
+    <circle class="fill" cx="70" cy="50" r="3" />
+    <rect class="fill-dark" x="67" y="50" width="6" height="15" />
+    
+    <!-- Loupe de précision -->
+    <circle class="fill-light" cx="20" cy="30" r="8" opacity="0.5" />
+    <circle class="stroke" cx="20" cy="30" r="8" />
+    <line class="stroke" x1="25" y1="35" x2="30" y2="40" stroke-width="1.5" />
+    
+    <!-- Polissoir -->
+    <rect class="fill" x="70" y="25" width="15" height="10" rx="2" />
+    <rect class="stroke" x="70" y="25" width="15" height="10" rx="2" />
+    <line class="stroke" x1="72" y1="30" x2="83" y2="30" />
+    
+    <!-- Facettes du diamant (lignes de taille) -->
+    <line class="stroke" x1="50" y1="30" x2="45" y2="38" stroke-width="0.5" />
+    <line class="stroke" x1="50" y1="30" x2="55" y2="38" stroke-width="0.5" />
+    <line class="stroke" x1="45" y1="38" x2="55" y2="38" stroke-width="0.5" />
+  </g>
+</svg>

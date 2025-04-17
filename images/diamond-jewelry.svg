@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .stroke { stroke: #1D3C34; stroke-width: 2; fill: none; }
+    .fill { fill: #C9A980; }
+    .fill-light { fill: #E5D7B5; }
+    .fill-dark { fill: #8A7654; }
+  </style>
+  <g>
+    <!-- Collier avec diamant -->
+    <path class="fill" d="M50,25 C30,25 20,40 20,50 C20,60 30,75 50,75 C70,75 80,60 80,50 C80,40 70,25 50,25 Z" />
+    <path class="stroke" d="M50,25 C30,25 20,40 20,50 C20,60 30,75 50,75 C70,75 80,60 80,50 C80,40 70,25 50,25 Z" />
+    
+    <!-- Diamant central -->
+    <polygon class="fill-light" points="50,40 45,50 55,50" />
+    <polygon class="stroke" points="50,40 45,50 55,50" />
+    
+    <!-- Petits diamants sur le collier -->
+    <circle class="fill-light" cx="35" cy="30" r="2" />
+    <circle class="fill-light" cx="65" cy="30" r="2" />
+    <circle class="fill-light" cx="25" cy="50" r="2" />
+    <circle class="fill-light" cx="75" cy="50" r="2" />
+    <circle class="fill-light" cx="35" cy="70" r="2" />
+    <circle class="fill-light" cx="65" cy="70" r="2" />
+    
+    <!-- Écrin de bijou -->
+    <rect class="fill-dark" x="15" y="80" width="70" height="15" rx="3" />
+    <rect class="stroke" x="15" y="80" width="70" height="15" rx="3" />
+    <rect class="fill" x="20" y="85" width="60" height="5" rx="1" />
+    
+    <!-- Certificat de traçabilité -->
+    <rect class="fill-light" x="90" y="40" width="8" height="40" />
+    <rect class="stroke" x="90" y="40" width="8" height="40" />
+    <line class="stroke" x1="92" y1="45" x2="96" y2="45" stroke-width="0.5" />
+    <line class="stroke" x1="92" y1="50" x2="96" y2="50" stroke-width="0.5" />
+    <line class="stroke" x1="92" y1="55" x2="96" y2="55" stroke-width="0.5" />
+    <line class="stroke" x1="92" y1="60" x2="96" y2="60" stroke-width="0.5" />
+    <line class="stroke" x1="92" y1="65" x2="96" y2="65" stroke-width="0.5" />
+    <line class="stroke" x1="92" y1="70" x2="94" y2="70" stroke-width="0.5" />
+    
+    <!-- QR code stylisé pour la traçabilité -->
+    <rect class="fill-dark" x="91" y="75" width="6" height="6" />
+    <rect class="fill-light" x="93" y="77" width="2" height="2" />
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .stroke { stroke: #1D3C34; stroke-width: 2; fill: none; }
+    .fill { fill: #C9A980; }
+    .fill-light { fill: #E5D7B5; }
+    .fill-dark { fill: #8A7654; }
+  </style>
+  <g>
+    <!-- Table de négociation -->
+    <rect class="fill-dark" x="20" y="60" width="60" height="10" rx="2" />
+    <rect class="stroke" x="20" y="60" width="60" height="10" rx="2" />
+    <rect class="fill-dark" x="25" y="70" width="5" height="20" />
+    <rect class="fill-dark" x="70" y="70" width="5" height="20" />
+    
+    <!-- Diamant au centre -->
+    <polygon class="fill-light" points="50,30 40,45 60,45" />
+    <polygon class="stroke" points="50,30 40,45 60,45" />
+    
+    <!-- Personnes négociant (stylisées) -->
+    <circle class="fill" cx="30" cy="55" r="5" />
+    <path class="stroke" d="M30,60 L30,70" />
+    <path class="stroke" d="M25,65 L35,65" />
+    <path class="stroke" d="M30,70 L25,80" />
+    <path class="stroke" d="M30,70 L35,80" />
+    
+    <circle class="fill" cx="70" cy="55" r="5" />
+    <path class="stroke" d="M70,60 L70,70" />
+    <path class="stroke" d="M65,65 L75,65" />
+    <path class="stroke" d="M70,70 L65,80" />
+    <path class="stroke" d="M70,70 L75,80" />
+    
+    <!-- Contrat et documents -->
+    <rect class="fill-light" x="45" y="50" width="10" height="15" />
+    <rect class="stroke" x="45" y="50" width="10" height="15" />
+    <line class="stroke" x1="47" y1="55" x2="53" y2="55" />
+    <line class="stroke" x1="47" y1="58" x2="53" y2="58" />
+    <line class="stroke" x1="47" y1="61" x2="50" y2="61" />
+    
+    <!-- Symbole d'argent -->
+    <text x="15" y="45" font-family="sans-serif" font-size="12" class="fill-dark">$</text>
+    <text x="85" y="45" font-family="sans-serif" font-size="12" class="fill-dark">$</text>
+  </g>
+</svg>
