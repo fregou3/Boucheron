@@ -1,0 +1,8 @@
+<!-- Certification Kimberley Process -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 100" width="200" height="100">
+  <rect x="10" y="10" width="180" height="80" rx="10" fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  <text x="100" y="40" text-anchor="middle" fill="#004D40" font-family="Arial" font-weight="bold" font-size="14">KIMBERLEY</text>
+  <text x="100" y="60" text-anchor="middle" fill="#004D40" font-family="Arial" font-weight="bold" font-size="14">PROCESS</text>
+  <polygon points="30,50 40,40 50,50 40,60" fill="#D4AF37" opacity="0.8"/>
+  <polygon points="150,50 160,40 170,50 160,60" fill="#D4AF37" opacity="0.8"/>
+</svg>

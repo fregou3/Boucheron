@@ -1,0 +1,55 @@
+<!-- Carte stylisée pour l'origine des matériaux -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <!-- Fond de carte -->
+  <rect x="0" y="0" width="800" height="400" fill="#E0F7FA"/>
+  
+  <!-- Contours simplifiés des continents -->
+  <!-- Afrique -->
+  <path d="M400,150 Q450,200 430,250 Q410,300 380,320 Q350,340 320,300 Q290,260 300,220 Q310,180 350,160 Z" 
+        fill="#F5F5DC" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Europe -->
+  <path d="M380,120 Q420,100 450,120 Q480,140 470,170 Q460,200 430,190 Q400,180 380,150 Z" 
+        fill="#F5F5DC" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Asie -->
+  <path d="M480,100 Q550,80 600,120 Q650,160 630,220 Q610,280 550,260 Q490,240 470,190 Q450,140 480,100 Z" 
+        fill="#F5F5DC" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Amérique du Nord -->
+  <path d="M150,100 Q200,80 250,120 Q300,160 280,200 Q260,240 200,220 Q140,200 130,150 Z" 
+        fill="#F5F5DC" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Amérique du Sud -->
+  <path d="M200,230 Q240,250 230,300 Q220,350 180,330 Q140,310 150,270 Z" 
+        fill="#F5F5DC" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Points d'origine des matériaux -->
+  <!-- Afrique du Sud (Or) -->
+  <circle cx="380" cy="300" r="10" fill="#D4AF37"/>
+  <text x="400" y="300" font-family="Arial" font-size="12" fill="#004D40">Afrique du Sud</text>
+  <text x="400" y="315" font-family="Arial" font-size="10" fill="#004D40">Or 18 carats</text>
+  
+  <!-- Botswana (Diamants) -->
+  <circle cx="390" cy="270" r="10" fill="#E0F7FA" stroke="#004D40" stroke-width="2"/>
+  <text x="410" y="270" font-family="Arial" font-size="12" fill="#004D40">Botswana</text>
+  <text x="410" y="285" font-family="Arial" font-size="10" fill="#004D40">Diamants</text>
+  
+  <!-- France (Fabrication) -->
+  <circle cx="380" cy="140" r="10" fill="#004D40"/>
+  <text x="400" y="140" font-family="Arial" font-size="12" fill="#004D40">France</text>
+  <text x="400" y="155" font-family="Arial" font-size="10" fill="#004D40">Fabrication</text>
+  
+  <!-- Légende -->
+  <rect x="600" y="300" width="180" height="80" fill="#FFFFFF" stroke="#004D40" stroke-width="1"/>
+  <text x="610" y="320" font-family="Arial" font-weight="bold" font-size="12" fill="#004D40">Légende</text>
+  
+  <circle cx="620" cy="340" r="5" fill="#D4AF37"/>
+  <text x="630" y="343" font-family="Arial" font-size="10" fill="#004D40">Or</text>
+  
+  <circle cx="620" cy="360" r="5" fill="#E0F7FA" stroke="#004D40" stroke-width="1"/>
+  <text x="630" y="363" font-family="Arial" font-size="10" fill="#004D40">Diamants</text>
+  
+  <circle cx="620" cy="380" r="5" fill="#004D40"/>
+  <text x="630" y="383" font-family="Arial" font-size="10" fill="#004D40">Fabrication</text>
+</svg>

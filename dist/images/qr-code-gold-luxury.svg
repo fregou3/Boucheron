@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <!-- Fond blanc avec légère ombre -->
+  <rect x="0" y="0" width="300" height="300" fill="#FFFFFF" rx="5" ry="5" filter="url(#shadow)"/>
+  
+  <!-- Définition de l'ombre -->
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    
+    <!-- Dégradé doré -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D485"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9E7E38"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Fond doré pour le QR code -->
+  <rect x="50" y="50" width="200" height="200" fill="url(#goldGradient)" rx="2" ry="2"/>
+  
+  <!-- Modules QR code en noir -->
+  <!-- Coins (position markers) -->
+  <rect x="65" y="65" width="30" height="30" fill="#000000"/>
+  <rect x="205" y="65" width="30" height="30" fill="#000000"/>
+  <rect x="65" y="205" width="30" height="30" fill="#000000"/>
+  
+  <!-- Carrés blancs à l'intérieur des position markers -->
+  <rect x="75" y="75" width="10" height="10" fill="url(#goldGradient)"/>
+  <rect x="215" y="75" width="10" height="10" fill="url(#goldGradient)"/>
+  <rect x="75" y="215" width="10" height="10" fill="url(#goldGradient)"/>
+  
+  <!-- Modules du QR code (pattern simplifié) -->
+  <rect x="110" y="65" width="10" height="10" fill="#000000"/>
+  <rect x="130" y="65" width="10" height="10" fill="#000000"/>
+  <rect x="150" y="65" width="10" height="10" fill="#000000"/>
+  <rect x="170" y="65" width="10" height="10" fill="#000000"/>
+  
+  <rect x="65" y="110" width="10" height="10" fill="#000000"/>
+  <rect x="85" y="110" width="10" height="10" fill="#000000"/>
+  <rect x="125" y="110" width="10" height="10" fill="#000000"/>
+  <rect x="145" y="110" width="10" height="10" fill="#000000"/>
+  <rect x="185" y="110" width="10" height="10" fill="#000000"/>
+  <rect x="205" y="110" width="10" height="10" fill="#000000"/>
+  
+  <rect x="105" y="130" width="10" height="10" fill="#000000"/>
+  <rect x="125" y="130" width="10" height="10" fill="#000000"/>
+  <rect x="145" y="130" width="10" height="10" fill="#000000"/>
+  <rect x="165" y="130" width="10" height="10" fill="#000000"/>
+  <rect x="185" y="130" width="10" height="10" fill="#000000"/>
+  
+  <rect x="65" y="150" width="10" height="10" fill="#000000"/>
+  <rect x="85" y="150" width="10" height="10" fill="#000000"/>
+  <rect x="105" y="150" width="10" height="10" fill="#000000"/>
+  <rect x="145" y="150" width="10" height="10" fill="#000000"/>
+  <rect x="165" y="150" width="10" height="10" fill="#000000"/>
+  <rect x="205" y="150" width="10" height="10" fill="#000000"/>
+  
+  <rect x="85" y="170" width="10" height="10" fill="#000000"/>
+  <rect x="105" y="170" width="10" height="10" fill="#000000"/>
+  <rect x="125" y="170" width="10" height="10" fill="#000000"/>
+  <rect x="145" y="170" width="10" height="10" fill="#000000"/>
+  <rect x="185" y="170" width="10" height="10" fill="#000000"/>
+  
+  <rect x="105" y="185" width="10" height="10" fill="#000000"/>
+  <rect x="125" y="185" width="10" height="10" fill="#000000"/>
+  <rect x="145" y="185" width="10" height="10" fill="#000000"/>
+  <rect x="165" y="185" width="10" height="10" fill="#000000"/>
+  <rect x="185" y="185" width="10" height="10" fill="#000000"/>
+  <rect x="205" y="185" width="10" height="10" fill="#000000"/>
+  
+  <rect x="110" y="205" width="10" height="10" fill="#000000"/>
+  <rect x="130" y="205" width="10" height="10" fill="#000000"/>
+  <rect x="150" y="205" width="10" height="10" fill="#000000"/>
+  <rect x="170" y="205" width="10" height="10" fill="#000000"/>
+  <rect x="190" y="205" width="10" height="10" fill="#000000"/>
+  
+  <!-- Texte doré vertical sur le côté -->
+  <text transform="translate(30, 200) rotate(-90)" font-family="Cormorant Garamond, serif" font-size="12" fill="url(#goldGradient)" font-style="italic">BOUCHERON PARIS DEPUIS 1858</text>
+</svg>

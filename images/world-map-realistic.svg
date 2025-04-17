@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600">
+  <!-- Fond de carte -->
+  <rect x="0" y="0" width="1200" height="600" fill="#F5F5F0"/>
+  
+  <!-- Contours des continents en vert Boucheron -->
+  <path d="M300,150 Q350,120 400,130 Q450,140 500,120 Q550,100 600,110 Q650,120 700,100 Q750,80 800,100 Q850,120 900,110 Q950,100 1000,120 L1000,300 Q950,320 900,310 Q850,300 800,320 Q750,340 700,320 Q650,300 600,310 Q550,320 500,300 Q450,280 400,290 Q350,300 300,280 Z" fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <path d="M200,350 Q250,330 300,340 Q350,350 400,330 Q450,310 500,320 Q550,330 600,310 Q650,290 700,300 Q750,310 800,290 L800,450 Q750,470 700,460 Q650,450 600,470 Q550,490 500,470 Q450,450 400,460 Q350,470 300,450 Q250,430 200,440 Z" fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Points d'intérêt (POI) -->
+  <!-- Paris - Atelier Boucheron -->
+  <circle cx="480" cy="180" r="8" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="480" y="165" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Paris</text>
+  <text x="480" y="150" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Atelier Boucheron</text>
+  
+  <!-- Suisse - Fournisseur de mouvements -->
+  <circle cx="510" cy="200" r="6" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="510" y="220" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Suisse</text>
+  <text x="510" y="235" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Fournisseur de diamants</text>
+  
+  <!-- Italie - Cuir de qualité -->
+  <circle cx="520" cy="230" r="6" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="520" y="250" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Italie</text>
+  <text x="520" y="265" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Artisans joailliers</text>
+  
+  <!-- Afrique du Sud - Mines de diamants -->
+  <circle cx="550" cy="400" r="6" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="550" y="420" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Afrique du Sud</text>
+  <text x="550" y="435" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Mines de diamants</text>
+  
+  <!-- Australie - Or éthique -->
+  <circle cx="850" cy="420" r="6" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="850" y="440" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Australie</text>
+  <text x="850" y="455" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Or éthique</text>
+  
+  <!-- Lignes de connexion -->
+  <path d="M480,180 L510,200" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,2"/>
+  <path d="M480,180 L520,230" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,2"/>
+  <path d="M480,180 L550,400" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,2"/>
+  <path d="M480,180 L850,420" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,2"/>
+  
+  <!-- Légende -->
+  <rect x="950" y="150" width="200" height="150" fill="#FFFFFF" stroke="#004D40" stroke-width="1"/>
+  <text x="1050" y="180" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">LÉGENDE</text>
+  
+  <circle cx="970" y="210" r="6" fill="#D4AF37" stroke="#004D40" stroke-width="1"/>
+  <text x="1050" y="215" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Sites de production</text>
+  
+  <line x1="970" y1="240" x2="990" y2="240" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,2"/>
+  <text x="1050" y="245" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Chaîne d'approvisionnement</text>
+  
+  <rect x="965" y="265" width="10" height="10" fill="#FFFFFF" stroke="#004D40" stroke-width="1"/>
+  <text x="1050" y="275" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40">Pays partenaires</text>
+  
+  <!-- Titre de la carte -->
+  <text x="600" y="80" font-family="Cormorant Garamond, serif" font-size="24" text-anchor="middle" fill="#004D40" font-weight="bold">LOCALISATION DE NOS FILIÈRES</text>
+  <text x="600" y="110" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-style="italic">Traçabilité et transparence de notre chaîne d'approvisionnement</text>
+</svg>

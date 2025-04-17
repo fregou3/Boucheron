@@ -1,0 +1,53 @@
+<!-- QR Code pour la traçabilité -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Fond du QR code -->
+  <rect x="10" y="10" width="180" height="180" fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Motif du QR code (simplifié) -->
+  <g fill="#004D40">
+    <!-- Coins de détection -->
+    <rect x="30" y="30" width="30" height="30"/>
+    <rect x="140" y="30" width="30" height="30"/>
+    <rect x="30" y="140" width="30" height="30"/>
+    
+    <!-- Motifs intérieurs du QR code -->
+    <rect x="70" y="30" width="10" height="10"/>
+    <rect x="90" y="30" width="10" height="10"/>
+    <rect x="110" y="30" width="10" height="10"/>
+    
+    <rect x="30" y="50" width="10" height="10"/>
+    <rect x="50" y="50" width="10" height="10"/>
+    <rect x="90" y="50" width="10" height="10"/>
+    <rect x="130" y="50" width="10" height="10"/>
+    <rect x="150" y="50" width="10" height="10"/>
+    
+    <rect x="50" y="70" width="10" height="10"/>
+    <rect x="70" y="70" width="10" height="10"/>
+    <rect x="110" y="70" width="10" height="10"/>
+    <rect x="130" y="70" width="10" height="10"/>
+    
+    <rect x="30" y="90" width="10" height="10"/>
+    <rect x="70" y="90" width="10" height="10"/>
+    <rect x="90" y="90" width="10" height="10"/>
+    <rect x="110" y="90" width="10" height="10"/>
+    <rect x="150" y="90" width="10" height="10"/>
+    
+    <rect x="50" y="110" width="10" height="10"/>
+    <rect x="90" y="110" width="10" height="10"/>
+    <rect x="130" y="110" width="10" height="10"/>
+    
+    <rect x="30" y="130" width="10" height="10"/>
+    <rect x="70" y="130" width="10" height="10"/>
+    <rect x="110" y="130" width="10" height="10"/>
+    <rect x="150" y="130" width="10" height="10"/>
+    
+    <rect x="70" y="150" width="10" height="10"/>
+    <rect x="90" y="150" width="10" height="10"/>
+    <rect x="110" y="150" width="10" height="10"/>
+    <rect x="130" y="150" width="10" height="10"/>
+  </g>
+  
+  <!-- Logo Boucheron au centre (petit) -->
+  <rect x="85" y="85" width="30" height="30" fill="#FFFFFF"/>
+  <text x="100" y="105" text-anchor="middle" fill="#004D40" font-family="Arial" font-weight="bold" font-size="8">B</text>
+</svg>

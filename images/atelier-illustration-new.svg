@@ -1,0 +1,105 @@
+<!-- Illustration améliorée de l'atelier Boucheron -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- Fond élégant avec dégradé subtil -->
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8F3E9;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F5E6E0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Dégradé pour l'or -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#F9DF74;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Dégradé pour le bois noble -->
+    <linearGradient id="woodGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5D4037;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#8D6E63;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5D4037;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Effet de brillance pour les diamants -->
+    <radialGradient id="diamondGradient" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#E0F7FA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B2EBF2;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Ombre portée -->
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3" />
+      <feOffset dx="2" dy="2" result="offsetblur" />
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3" />
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Arrière-plan -->
+  <rect width="800" height="500" fill="url(#backgroundGradient)" />
+  
+  <!-- Fenêtre élégante avec vue sur Paris -->
+  <rect x="50" y="50" width="250" height="300" rx="5" ry="5" fill="#E3F2FD" stroke="#004D40" stroke-width="2" opacity="0.9" />
+  <line x1="175" y1="50" x2="175" y2="350" stroke="#004D40" stroke-width="1" opacity="0.5" />
+  <line x1="50" y1="200" x2="300" y2="200" stroke="#004D40" stroke-width="1" opacity="0.5" />
+  
+  <!-- Silhouette de la Tour Eiffel en arrière-plan -->
+  <path d="M175,100 L160,350 L190,350 Z" fill="#004D40" opacity="0.1" />
+  <path d="M175,100 L140,350 L210,350 Z" fill="#004D40" opacity="0.05" />
+  
+  <!-- Établi de joaillier luxueux -->
+  <rect x="350" y="200" width="400" height="20" rx="5" ry="5" fill="url(#woodGradient)" filter="url(#shadow)" />
+  <rect x="370" y="220" width="15" height="130" rx="2" ry="2" fill="url(#woodGradient)" />
+  <rect x="715" y="220" width="15" height="130" rx="2" ry="2" fill="url(#woodGradient)" />
+  
+  <!-- Tapis de travail en cuir vert -->
+  <rect x="400" y="180" width="300" height="20" rx="3" ry="3" fill="#004D40" opacity="0.8" />
+  
+  <!-- Outils de joaillier élégants -->
+  <!-- Loupe de précision -->
+  <circle cx="450" cy="150" r="30" fill="none" stroke="#8D6E63" stroke-width="3" />
+  <circle cx="450" cy="150" r="25" fill="#E0F7FA" opacity="0.6" />
+  <line x1="450" y1="180" x2="450" y2="220" stroke="#8D6E63" stroke-width="3" />
+  
+  <!-- Bijou en cours de création - Pendentif Serpent Bohème -->
+  <circle cx="550" cy="160" r="25" fill="url(#goldGradient)" filter="url(#shadow)" />
+  <circle cx="550" cy="160" r="15" fill="url(#diamondGradient)" />
+  
+  <!-- Pinces de précision -->
+  <path d="M600,150 C610,140 620,140 630,150" stroke="#B0BEC5" stroke-width="2" fill="none" />
+  <path d="M600,170 C610,180 620,180 630,170" stroke="#B0BEC5" stroke-width="2" fill="none" />
+  <line x1="615" y1="150" x2="615" y2="170" stroke="#B0BEC5" stroke-width="1" />
+  
+  <!-- Diamants et pierres précieuses -->
+  <polygon points="500,170 510,160 520,170 510,180" fill="url(#diamondGradient)" filter="url(#shadow)" />
+  <circle cx="480" cy="165" r="8" fill="#E57373" opacity="0.8" filter="url(#shadow)" /> <!-- Rubis -->
+  <circle cx="530" cy="175" r="6" fill="#81C784" opacity="0.8" filter="url(#shadow)" /> <!-- Émeraude -->
+  
+  <!-- Étagère murale élégante avec outils et matériaux -->
+  <rect x="400" y="80" width="300" height="10" rx="2" ry="2" fill="url(#woodGradient)" />
+  
+  <!-- Éléments sur l'étagère -->
+  <rect x="420" y="50" width="40" height="30" rx="2" ry="2" fill="#004D40" opacity="0.7" /> <!-- Boîte à bijoux -->
+  <circle cx="490" cy="65" r="15" fill="url(#goldGradient)" /> <!-- Bobine de fil d'or -->
+  <rect x="520" y="45" width="30" height="35" rx="2" ry="2" fill="#EFEBE9" stroke="#8D6E63" stroke-width="1" /> <!-- Carnet de croquis -->
+  <rect x="570" y="55" width="50" height="25" rx="3" ry="3" fill="#263238" opacity="0.8" /> <!-- Écrin de présentation -->
+  <circle cx="640" cy="65" r="12" fill="url(#diamondGradient)" filter="url(#shadow)" /> <!-- Diamant taillé -->
+  
+  <!-- Artisan joaillier stylisé (mains travaillant) -->
+  <path d="M500,250 C520,230 540,230 560,250" stroke="#D7CCC8" stroke-width="8" fill="none" opacity="0.9" />
+  <path d="M520,270 C530,260 550,260 560,270" stroke="#D7CCC8" stroke-width="6" fill="none" opacity="0.9" />
+  
+  <!-- Ombres et reflets -->
+  <ellipse cx="550" cy="350" rx="150" ry="10" fill="#000000" opacity="0.1" />
+  
+  <!-- Signature Boucheron discrète -->
+  <text x="650" y="450" font-family="serif" font-size="12" fill="#004D40" opacity="0.7">BOUCHERON</text>
+  <text x="650" y="465" font-family="serif" font-size="8" fill="#004D40" opacity="0.7">PARIS DEPUIS 1858</text>
+</svg>

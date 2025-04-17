@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <!-- Cercle extérieur doré -->
+  <circle cx="100" cy="100" r="95" fill="none" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Cercle intérieur avec motif rayonnant -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="#D4AF37" stroke-width="1"/>
+  
+  <!-- Rayons dorés -->
+  <g stroke="#D4AF37" stroke-width="1">
+    <path d="M100,15 L100,5" />
+    <path d="M120,17 L125,8" />
+    <path d="M139,24 L147,16" />
+    <path d="M155,36 L165,30" />
+    <path d="M167,53 L178,50" />
+    <path d="M172,73 L185,73" />
+    <path d="M172,93 L185,97" />
+    <path d="M165,112 L175,120" />
+    <path d="M152,128 L160,138" />
+    <path d="M135,140 L140,152" />
+    <path d="M115,147 L117,160" />
+    <path d="M95,150 L93,163" />
+    <path d="M75,147 L70,160" />
+    <path d="M57,138 L50,150" />
+    <path d="M42,125 L32,135" />
+    <path d="M30,110 L20,115" />
+    <path d="M22,90 L10,92" />
+    <path d="M20,70 L8,65" />
+    <path d="M25,50 L15,42" />
+    <path d="M35,33 L25,23" />
+    <path d="M50,20 L42,10" />
+    <path d="M68,12 L63,3" />
+    <path d="M85,8 L83,0" />
+  </g>
+  
+  <!-- Écusson central -->
+  <path d="M70,60 L100,50 L130,60 L130,110 C130,130 100,150 100,150 C100,150 70,130 70,110 Z" fill="#FFFFFF" stroke="#D4AF37" stroke-width="2"/>
+  
+  <!-- Divisions de l'écusson -->
+  <path d="M70,60 L130,60" stroke="#D4AF37" stroke-width="1.5"/>
+  <path d="M100,50 L100,150" stroke="#D4AF37" stroke-width="1.5"/>
+  
+  <!-- Symboles dans les quadrants -->
+  <!-- Microscope (haut gauche) -->
+  <circle cx="85" cy="75" r="8" fill="#D4AF37" opacity="0.8"/>
+  <path d="M82,80 L78,90" stroke="#D4AF37" stroke-width="1.5"/>
+  
+  <!-- Balance (haut droit) -->
+  <path d="M115,75 L125,75 M105,75 L115,75 M115,70 L115,80" stroke="#D4AF37" stroke-width="1.5"/>
+  <path d="M105,80 L125,80" stroke="#D4AF37" stroke-width="1.5"/>
+  
+  <!-- Diamant (bas gauche) -->
+  <polygon points="85,110 80,115 85,120 90,115" fill="#D4AF37" opacity="0.8"/>
+  
+  <!-- Loupe (bas droit) -->
+  <circle cx="115" cy="110" r="7" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+  <path d="M120,115 L125,120" stroke="#D4AF37" stroke-width="1.5"/>
+  
+  <!-- Texte GIA -->
+  <text x="100" y="100" font-family="Arial, sans-serif" font-weight="bold" font-size="18" text-anchor="middle" fill="#D4AF37">GIA</text>
+  
+  <!-- Texte circulaire -->
+  <path id="textPath" d="M100,30 A70,70 0 1,1 99.9,30" fill="none"/>
+  <text font-family="Arial, sans-serif" font-size="8" fill="#D4AF37">
+    <textPath href="#textPath" startOffset="5%">GEMOLOGICAL INSTITUTE OF AMERICA · ESTABLISHED 1931 ·</textPath>
+  </text>
+</svg>

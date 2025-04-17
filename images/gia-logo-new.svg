@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
+  <!-- Logo GIA plus réaliste basé sur la référence -->
+  <g fill="#D4AF37">
+    <!-- Cercle -->
+    <circle cx="40" cy="50" r="25" fill="none" stroke="#D4AF37" stroke-width="4"/>
+    
+    <!-- Lettres "GIA" -->
+    <!-- G -->
+    <path d="M110,30 L110,70 L90,70 L90,30 L110,30 Z M90,30 L130,30 L130,45 L110,45 L110,55 L130,55 L130,70 L90,70 Z" fill="#D4AF37"/>
+    
+    <!-- I -->
+    <rect x="140" y="30" width="20" height="40"/>
+    
+    <!-- A -->
+    <path d="M170,70 L190,30 L210,70 L195,70 L190,60 L185,70 L170,70 Z M190,40 L185,55 L195,55 L190,40 Z"/>
+  </g>
+</svg>
