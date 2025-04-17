@@ -230,6 +230,7 @@
   gap: 30px;
   width: 100%;
   overflow: visible;
+  padding-bottom: 30px; /* Ajoute un espace supplémentaire en bas */
 }
 
 .map-wrapper {
@@ -241,9 +242,9 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  min-height: 600px;
+  min-height: 700px; /* Augmenté de 600px à 700px */
   padding: 0;
-  margin: 0 0 50px 0;
+  margin: 0 0 70px 0; /* Augmenté la marge du bas de 50px à 70px */
 }
 
 .map-image {
@@ -256,10 +257,11 @@
   object-fit: contain;
   max-height: none;
   transform-origin: top center;
+  transform: scale(0.95); /* Légèrement réduit pour s'assurer que tout est visible */
 }
 
 .map-wrapper:hover .map-image {
-  transform: scale(1.01);
+  transform: scale(0.98); /* Effet de survol plus subtil pour éviter que la carte ne sorte du conteneur */
 }
 
 .map-legend {
