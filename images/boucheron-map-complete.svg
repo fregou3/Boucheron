@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fond de carte élégant -->
+  <rect x="0" y="0" width="800" height="500" fill="#f5f8f7" rx="10" ry="10"/>
+  
+  <!-- Contour de l'Europe stylisé -->
+  <path d="M100,100 C150,80 250,70 300,90 C350,110 400,100 450,120 C500,140 550,170 600,190 C650,210 700,250 730,290 C740,310 745,340 740,370 C735,400 720,430 700,450 C680,470 650,480 620,490 C590,500 550,505 510,500 C470,495 430,480 390,460 C350,440 320,420 290,400 C260,380 230,360 200,350 C170,340 140,340 120,360 C100,380 90,410 100,440 C110,470 130,490 160,500" 
+        fill="none" stroke="#004D40" stroke-width="2" opacity="0.2"/>
+  
+  <!-- France stylisée -->
+  <path d="M200,180 C230,160 270,150 310,160 C350,170 380,190 400,220 C420,250 430,290 420,330 C410,370 380,400 340,410 C300,420 260,410 230,380 C200,350 190,310 200,270 C210,230 230,200 200,180Z" 
+        fill="#e8f5e9" stroke="#004D40" stroke-width="1.5"/>
+  <text x="270" y="290" font-family="Cormorant Garamond, serif" font-size="24" fill="#004D40" text-anchor="middle">FRANCE</text>
+  
+  <!-- Suisse stylisée -->
+  <path d="M400,220 C420,210 445,205 470,210 C495,215 515,230 525,250 C535,270 535,295 525,315 C515,335 495,350 470,355 C445,360 420,355 400,340 C380,325 370,300 380,280 C390,260 410,245 400,220Z" 
+        fill="#e8f5e9" stroke="#004D40" stroke-width="1.5"/>
+  <text x="460" y="285" font-family="Cormorant Garamond, serif" font-size="18" fill="#004D40" text-anchor="middle">SUISSE</text>
+  
+  <!-- Italie stylisée -->
+  <path d="M420,330 C440,320 465,315 490,320 C515,325 535,340 550,360 C565,380 575,405 575,430 C575,455 565,470 545,470 C525,470 500,465 475,460 C450,455 430,440 415,420 C400,400 395,375 400,350 C405,325 420,355 420,330Z" 
+        fill="#e8f5e9" stroke="#004D40" stroke-width="1.5"/>
+  <text x="495" y="415" font-family="Cormorant Garamond, serif" font-size="18" fill="#004D40" text-anchor="middle">ITALIE</text>
+  
+  <!-- Points de localisation -->
+  <!-- Paris -->
+  <circle cx="270" cy="230" r="12" fill="#D4AF37" stroke="white" stroke-width="2"/>
+  <text x="270" y="205" font-family="Cormorant Garamond, serif" font-size="16" fill="#004D40" text-anchor="middle" font-style="italic">Paris</text>
+  <text x="270" y="185" font-family="Cormorant Garamond, serif" font-size="12" fill="#666" text-anchor="middle">Atelier Boucheron</text>
+  
+  <!-- Genève -->
+  <circle cx="460" cy="250" r="12" fill="#D4AF37" stroke="white" stroke-width="2"/>
+  <text x="460" y="225" font-family="Cormorant Garamond, serif" font-size="16" fill="#004D40" text-anchor="middle" font-style="italic">Genève</text>
+  <text x="460" y="205" font-family="Cormorant Garamond, serif" font-size="12" fill="#666" text-anchor="middle">Fournisseur de diamants</text>
+  
+  <!-- Milan -->
+  <circle cx="495" cy="360" r="12" fill="#D4AF37" stroke="white" stroke-width="2"/>
+  <text x="495" y="335" font-family="Cormorant Garamond, serif" font-size="16" fill="#004D40" text-anchor="middle" font-style="italic">Milan</text>
+  <text x="495" y="315" font-family="Cormorant Garamond, serif" font-size="12" fill="#666" text-anchor="middle">Ateliers joailliers</text>
+  
+  <!-- Lyon -->
+  <circle cx="330" cy="310" r="12" fill="#D4AF37" stroke="white" stroke-width="2"/>
+  <text x="330" y="285" font-family="Cormorant Garamond, serif" font-size="16" fill="#004D40" text-anchor="middle" font-style="italic">Lyon</text>
+  <text x="330" y="265" font-family="Cormorant Garamond, serif" font-size="12" fill="#666" text-anchor="middle">Centre logistique</text>
+  
+  <!-- Florence -->
+  <circle cx="470" cy="430" r="12" fill="#D4AF37" stroke="white" stroke-width="2"/>
+  <text x="470" y="460" font-family="Cormorant Garamond, serif" font-size="16" fill="#004D40" text-anchor="middle" font-style="italic">Florence</text>
+  <text x="470" y="480" font-family="Cormorant Garamond, serif" font-size="12" fill="#666" text-anchor="middle">Joaillerie</text>
+  
+  <!-- Lignes de chaîne d'approvisionnement -->
+  <path d="M270,230 L460,250" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M460,250 L495,360" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M270,230 L330,310" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5"/>
+  <path d="M495,360 L470,430" stroke="#D4AF37" stroke-width="2" stroke-dasharray="5,5"/>
+  
+  <!-- Boussole élégante -->
+  <g transform="translate(650, 150)">
+    <circle cx="0" cy="0" r="30" fill="white" stroke="#004D40" stroke-width="1"/>
+    <path d="M0,-25 L0,25 M-25,0 L25,0" stroke="#004D40" stroke-width="1"/>
+    <text x="0" y="-10" font-family="Cormorant Garamond, serif" font-size="14" fill="#004D40" text-anchor="middle">N</text>
+    <text x="0" y="18" font-family="Cormorant Garamond, serif" font-size="14" fill="#004D40" text-anchor="middle">S</text>
+    <text x="12" y="4" font-family="Cormorant Garamond, serif" font-size="14" fill="#004D40" text-anchor="middle">E</text>
+    <text x="-12" y="4" font-family="Cormorant Garamond, serif" font-size="14" fill="#004D40" text-anchor="middle">O</text>
+  </g>
+  
+  <!-- Échelle -->
+  <g transform="translate(200, 430)">
+    <line x1="0" y1="0" x2="100" y2="0" stroke="#004D40" stroke-width="2"/>
+    <line x1="0" y1="-5" x2="0" y2="5" stroke="#004D40" stroke-width="2"/>
+    <line x1="100" y1="-5" x2="100" y2="5" stroke="#004D40" stroke-width="2"/>
+    <text x="50" y="20" font-family="Cormorant Garamond, serif" font-size="12" fill="#004D40" text-anchor="middle">250 km</text>
+  </g>
+</svg>
