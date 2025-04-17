@@ -190,7 +190,8 @@
   border-radius: 15px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.08);
   padding: 40px;
-  overflow: hidden;
+  overflow: visible; /* Changé de hidden à visible pour éviter la troncature */
+  min-height: 1200px; /* Assure une hauteur minimale suffisante */
 }
 
 .map-container {
@@ -234,24 +235,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 800px; /* Augmenté la hauteur pour mieux afficher la carte */
+  height: 1000px; /* Augmenté davantage la hauteur */
   width: 100%;
-  overflow: hidden;
+  overflow: visible; /* Changé de hidden à visible pour éviter la troncature */
   margin-bottom: 30px;
+  padding: 20px;
 }
 
 .map-image {
   width: auto;
   height: auto;
-  max-width: 100%;
-  max-height: 780px; /* Limite la hauteur pour s'assurer que l'image s'affiche correctement */
+  max-width: none; /* Permet à l'image de dépasser la largeur du conteneur si nécessaire */
+  max-height: none; /* Supprime la limite de hauteur */
   display: block;
   transition: transform 0.3s ease;
   transform-origin: center center;
+  transform: scale(0.8); /* Réduit davantage l'image pour s'assurer qu'elle est entièrement visible */
+  position: relative;
+  top: -50px; /* Déplace légèrement l'image vers le haut */
 }
 
 .map-visual:hover .map-image {
-  transform: scale(1.02);
+  transform: scale(0.95); /* Légèrement plus grand que l'état normal */
 }
 
 .map-legend {
