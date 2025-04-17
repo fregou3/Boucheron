@@ -241,10 +241,11 @@
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   display: flex;
   justify-content: center;
-  align-items: center; /* Changé de flex-start à center pour centrer verticalement */
-  min-height: 1000px; /* Augmenté à 1000px pour garantir l'affichage complet */
-  padding: 20px 0; /* Ajouté du padding vertical */
-  margin: 0 0 100px 0;
+  align-items: center;
+  min-height: 1200px; /* Augmenté significativement la hauteur */
+  width: 100%; /* Assure que la largeur est maximale */
+  padding: 40px 0; /* Augmenté le padding vertical */
+  margin: 0 0 120px 0; /* Augmenté la marge inférieure */
 }
 
 .map-image {
@@ -255,13 +256,13 @@
   margin: 0 auto;
   transition: transform 0.3s ease;
   object-fit: contain;
-  max-height: 950px; /* Limite la hauteur maximale tout en gardant la carte visible */
-  transform-origin: center center; /* Changé de top center à center center */
-  transform: scale(0.8); /* Réduit davantage pour s'assurer que toute la carte est visible */
+  max-height: 1150px; /* Augmenté pour s'adapter à la nouvelle hauteur du conteneur */
+  transform-origin: center center;
+  transform: scale(1); /* Affichage à l'échelle 100% pour une meilleure visibilité */
 }
 
 .map-wrapper:hover .map-image {
-  transform: scale(0.85); /* Effet de survol légèrement plus grand que l'état normal */
+  transform: scale(1.05); /* Léger agrandissement au survol */
 }
 
 .map-legend {
