@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <!-- Définitions des dégradés et filtres -->
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5D485"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9E7E38"/>
+    </linearGradient>
+    
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.2"/>
+      </feComponentTransfer>
+      <feMerge> 
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/> 
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Fond de carte -->
+  <rect x="0" y="0" width="1200" height="800" fill="#F5F5F0"/>
+  
+  <!-- Carte de l'Europe (France, Suisse, Italie) stylisée -->
+  <!-- France -->
+  <path d="M300,300 Q350,250 400,240 Q450,230 500,250 Q550,270 580,320 Q610,370 600,420 Q590,470 550,500 Q510,530 450,520 Q390,510 350,470 Q310,430 300,380 Z" 
+        fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Suisse -->
+  <path d="M580,320 Q600,310 620,320 Q640,330 650,350 Q660,370 650,390 Q640,410 620,420 Q600,430 580,420 Q560,410 550,390 Q540,370 550,350 Z" 
+        fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Italie -->
+  <path d="M580,420 Q600,410 620,420 Q640,430 660,450 Q680,470 690,500 Q700,530 690,560 Q680,590 650,610 Q620,630 590,620 Q560,610 540,580 Q520,550 530,520 Q540,490 560,460 Z" 
+        fill="#FFFFFF" stroke="#004D40" stroke-width="2"/>
+  
+  <!-- Noms des pays -->
+  <text x="450" y="380" font-family="Cormorant Garamond, serif" font-size="24" text-anchor="middle" fill="#004D40" font-weight="bold">FRANCE</text>
+  <text x="600" y="360" font-family="Cormorant Garamond, serif" font-size="18" text-anchor="middle" fill="#004D40" font-weight="bold">SUISSE</text>
+  <text x="610" y="520" font-family="Cormorant Garamond, serif" font-size="20" text-anchor="middle" fill="#004D40" font-weight="bold">ITALIE</text>
+  
+  <!-- Points d'intérêt (POI) -->
+  <!-- Paris - Atelier Boucheron -->
+  <circle cx="400" cy="340" r="12" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <text x="400" y="320" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">Paris</text>
+  <text x="400" y="300" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40" font-style="italic">Atelier Boucheron</text>
+  <text x="400" y="280" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40">Place Vendôme</text>
+  
+  <!-- Genève - Fournisseur de diamants -->
+  <circle cx="590" cy="350" r="8" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <text x="590" y="330" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">Genève</text>
+  <text x="590" y="310" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40" font-style="italic">Fournisseur de diamants</text>
+  
+  <!-- Milan - Artisans joailliers -->
+  <circle cx="610" cy="450" r="8" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <text x="610" y="430" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">Milan</text>
+  <text x="610" y="410" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40" font-style="italic">Artisans joailliers</text>
+  
+  <!-- Valenza - Orfèvrerie -->
+  <circle cx="580" cy="480" r="8" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <text x="580" y="460" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">Valenza</text>
+  <text x="580" y="440" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40" font-style="italic">Orfèvrerie</text>
+  
+  <!-- Lyon - Centre logistique -->
+  <circle cx="450" cy="420" r="8" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5" filter="url(#dropShadow)"/>
+  <text x="450" y="400" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40" font-weight="bold">Lyon</text>
+  <text x="450" y="380" font-family="Cormorant Garamond, serif" font-size="14" text-anchor="middle" fill="#004D40" font-style="italic">Centre logistique</text>
+  
+  <!-- Lignes de connexion -->
+  <path d="M400,340 L590,350" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,3"/>
+  <path d="M400,340 L610,450" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,3"/>
+  <path d="M400,340 L580,480" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,3"/>
+  <path d="M400,340 L450,420" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,3"/>
+  
+  <!-- Légende -->
+  <rect x="800" y="300" width="300" height="200" fill="#FFFFFF" stroke="#004D40" stroke-width="1.5" rx="5" ry="5"/>
+  <text x="950" y="330" font-family="Cormorant Garamond, serif" font-size="20" text-anchor="middle" fill="#004D40" font-weight="bold">LÉGENDE</text>
+  
+  <circle cx="830" y="370" r="8" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5"/>
+  <text x="950" y="375" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40">Sites de production</text>
+  
+  <line x1="830" y1="410" x2="860" y2="410" stroke="url(#goldGradient)" stroke-width="2" stroke-dasharray="6,3"/>
+  <text x="950" y="415" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40">Chaîne d'approvisionnement</text>
+  
+  <circle cx="830" y="450" r="12" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1.5"/>
+  <text x="950" y="455" font-family="Cormorant Garamond, serif" font-size="16" text-anchor="middle" fill="#004D40">Siège Boucheron (Paris)</text>
+  
+  <!-- Titre de la carte -->
+  <text x="600" y="120" font-family="Cormorant Garamond, serif" font-size="32" text-anchor="middle" fill="#004D40" font-weight="bold">LOCALISATION DE NOS FILIÈRES</text>
+  <text x="600" y="160" font-family="Cormorant Garamond, serif" font-size="20" text-anchor="middle" fill="#004D40" font-style="italic">Traçabilité et transparence de notre chaîne d'approvisionnement en Europe</text>
+  
+  <!-- Petite carte du monde indiquant la zone -->
+  <rect x="100" y="600" width="200" height="120" fill="#FFFFFF" stroke="#004D40" stroke-width="1"/>
+  <path d="M120,650 Q140,640 160,645 Q180,650 200,645 Q220,640 240,645 Q260,650 280,645" stroke="#004D40" stroke-width="1" fill="none"/>
+  <rect x="180" y="640" width="40" height="30" fill="url(#goldGradient)" stroke="#004D40" stroke-width="1"/>
+  <text x="200" y="690" font-family="Cormorant Garamond, serif" font-size="12" text-anchor="middle" fill="#004D40" font-style="italic">Zone affichée</text>
+</svg>
